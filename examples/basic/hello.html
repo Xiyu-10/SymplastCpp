@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			html {
+				color-scheme: light dark;
+				background: light-dark(#eee, #222);
+			}
+			body {
+				font:
+					16px/1.6 system-ui,
+					sans-serif;
+				max-width: 26em;
+				margin: auto;
+				padding: 25vh 2em 2em;
+				text-align: center;
+			}
+			.card {
+				width: 100%;
+				background: #bababa;
+				color: #3d3d3d;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>SymplastCPP</h1>
+		<h3>Native and web, one symplast.</h3>
+		<p>A minimal example.</p>
+		<div class="card"><h3>Information</h3></div>
+		<script>
+			let card = document.querySelector(".card");
+			card.innerHTML += `<p>appVersion: ${navigator.appVersion}</p><p>Platform: ${navigator.platform}</p>`;
+		</script>
+	</body>
+</html>
